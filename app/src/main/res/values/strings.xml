@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TurnBasedGameTest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="desc">no more yellow</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="basic_attack">Basic Attack</string>
+    <string name="full_slash">Full Slashk</string>
+    <string name="charged_attack">Charged Attack</string>
+    <string name="stun">stun</string>
+    <string name="info">info</string>
+    <string name="infoText" >
+        <br/>\n
+        Basic Attack = 75 ~ 100 damage, 100% hit chance, plus 25 mana <br/>\n
+        Full Slash = 200 ~ 300 damage, 50% hit chance, minus 50 mana <br/>\n
+        Charged Attack = 150 ~ 200 damage, 100% hit chance, minus 25 mana <br/>\n
+        Stun = 30 ~ 50 damage, 50% chance to stun enemies for 2 turns, minus 25 mana <br/>\n
+        <br/>\n
+        Both character each have the same movesets <br/>\n
+    </string>
+    <string name="testes">hi \n  hi \n  hi \n </string>
+</resources>
