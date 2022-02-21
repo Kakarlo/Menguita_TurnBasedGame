@@ -10,6 +10,8 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
@@ -32,7 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView mheroHp,mheroMp,mheroName,mmonsHp,mmonsMp, mmonsName,menuText, mwinIndicator;
     //layout
     ConstraintLayout menuBox;
-    FrameLayout infoBox;
+    FrameLayout infoBox,heroStat,monsStat;
+    //Animation
+    Animation leftRight,rightLeft;
 
     //Hero Class
     int heroHP = 1500;
@@ -466,6 +470,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_main);
 
+        //Animation Call
+        leftRight = AnimationUtils.loadAnimation(this,R.anim.left_to_right);
+        leftRight.setStartOffset(500);
+        rightLeft = AnimationUtils.loadAnimation(this, R.anim.right_to_left);
+        rightLeft.setStartOffset(500);
+
         //Button call
         basicAttack = findViewById(R.id.basicAttack);
         fullSlash = findViewById(R.id.fullSlash);
@@ -509,6 +519,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Layout
         menuBox = findViewById(R.id.menuBox);
         infoBox = findViewById(R.id.infoTextBox);
+        heroStat = findViewById(R.id.heroStatsLayout);
+        monsStat = findViewById(R.id.monsStatsLayout);
+
+        //Animating
+        heroStat.setAnimation(leftRight);
+        monsStat.setAnimation(rightLeft);
 
         //runs the speed, turnCheck, and battlePhase
         speed();

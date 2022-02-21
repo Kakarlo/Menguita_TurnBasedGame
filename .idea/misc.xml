@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/BLANK/AndroidStudioProjects/Mengutia_TurnBasedGame/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/BLANK/AndroidStudioProjects/Mengutia_TurnBasedGame/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/BLANK/AndroidStudioProjects/Mengutia_TurnBasedGame/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/BLANK/AndroidStudioProjects/TurnBasedGameTest/app/src/main/res/drawable/custom_hp.xml" value="0.30833333333333335" />
         <entry key="..\:/BLANK/AndroidStudioProjects/TurnBasedGameTest/app/src/main/res/drawable/custom_progress_bg.xml" value="0.22135416666666666" />
         <entry key="..\:/BLANK/AndroidStudioProjects/TurnBasedGameTest/app/src/main/res/layout/activity_main.xml" value="0.33" />

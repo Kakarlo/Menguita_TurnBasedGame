@@ -8,11 +8,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TurnBasedGameTest">
+        android:theme="@style/Theme.Menguita_TurnBasedGame"
+        android:screenOrientation="landscape">
         <activity
-            android:name="com.example.menguita_turnbasedgame.MainActivity"
-            android:exported="true"
-            android:screenOrientation="landscape">
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
